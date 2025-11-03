@@ -9,17 +9,6 @@ markdown: kramdown
 highlighter: rouge
 theme: minima
 
-# Jekyll plugins
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-
-# Navigation
-header_pages:
-  - index.md
-  - docs/getting-started.md
-  - docs/api-reference.md
-  - about.md
 
 # Exclude from processing
 exclude:

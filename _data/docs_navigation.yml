@@ -1,0 +1,13 @@
+- title: Architecture
+  url: /docs/architecture/
+  children:
+    - title: Memory
+      url: /docs/architecture/memory/
+    - title: Data
+      url: /docs/architecture/data/
+- title: Assembly
+  url: /docs/assembly/
+- title: Language
+  url: /docs/language/
+- title: Tools
+  url: /docs/tools/

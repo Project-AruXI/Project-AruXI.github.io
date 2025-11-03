@@ -1,0 +1,18 @@
+<header class="site-header">
+  <div class="container header-inner">
+    <div class="brand">
+      <a class="brand-link" href="{{ '/' | relative_url }}">
+        <span class="logo"><img src="{{ '/assets/images/logo.svg' | relative_url }}" alt="{{ site.title }} logo"></span>
+        <span class="site-title-text">{{ site.title }}</span>
+      </a>
+    </div>
+    <nav class="main-nav">
+      <ul>
+        {% for item in site.data.navigation %}
+          {% assign top_active = page.url == item.url or page.url == item.url | append: 'index.html' or item.url == '/' and page.url == '/' %}
+          <li class="{% if top_active %}active{% endif %}"><a href="{{ item.url | relative_url }}">{{ item.title }}</a></li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</header>
