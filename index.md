@@ -14,3 +14,4 @@ Project AruXI is a new computer architecture, assembly, and language. This site 
 - [Assembly](/docs/assembly/)
 - [Language](/docs/language/)
 - [Tools](/docs/tools/)
+- [About](/about/)

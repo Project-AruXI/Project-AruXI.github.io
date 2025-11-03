@@ -56,6 +56,11 @@
 
   // on load auto-open any group that contains an active child
   document.addEventListener('DOMContentLoaded', function(){
+    try{
+      const cur = location.pathname.replace(/index.html$/, '');
+      // don't auto-open groups when on the docs index itself
+      if(cur === '/docs/' || cur === '/docs') return;
+    }catch(e){ /* ignore */ }
     document.querySelectorAll('.nav-group.has-children').forEach(group=>{
       if(group.querySelector('li.active')){
         const submenu = group.querySelector('.nav-submenu');
